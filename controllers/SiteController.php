@@ -3,13 +3,24 @@
 namespace app\controllers;
 
 use Yii;
-use yii\web\Controller;
 use app\models\SignupForm;
 use app\models\User;
 use app\models\SomeDataModel;
 
-class SiteController extends Controller
+class SiteController extends \app\components\BaseController
 {
+    /**
+     * {@inheritdoc}
+     */
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+        ];
+    }
+
     /**
      * Displays homepage.
      *
