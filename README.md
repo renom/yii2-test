@@ -1,3 +1,4 @@
+## Tasks
 1. Make a registration form. Registree must be able to choose an account type (person or organization).
 Person fields: email, fullname, tax identification number (if the person is an entrepreneur).
 Organization fields: email, fullname, organization name, tax identification number.
